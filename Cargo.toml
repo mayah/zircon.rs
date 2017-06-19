@@ -4,9 +4,11 @@ version = "0.1.0"
 authors = [
     "mayah <mayah@mayah.jp>",
 ]
+license = "MIT/Apache-2.0"
 repository = "https://github.com/mayah/zircon.rs"
 readme = "README.md"
 keywords = ["web"]
+description = "web application framework on tokio-based hyper"
 
 [dependencies]
 cookie = { version = "0.8", features = ["secure"] }
