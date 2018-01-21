@@ -72,6 +72,10 @@ impl<A: ZirconApp, H: Handler<A>> Zircon<A, H, DefaultErrorHandler<A>> {
             _p: PhantomData,
         })
     }
+
+    pub fn app(&self) -> Arc<A> {
+        self.app.clone()
+    }
 }
 
 fn serve<A: ZirconApp, H: Handler<A>, E: ErrorHandler<A>>(addr: SocketAddr, protocol: Arc<Http>,
